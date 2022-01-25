@@ -1,0 +1,154 @@
+html {
+  background: url("nav_images/sideblob.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fcf7eb;
+}
+
+header {
+  float: right;
+  display: block;
+  margin-right: 2%;
+}
+footer {
+  display: block;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0;
+  z-index: 10;
+}
+
+#animation-text {
+  float: left;
+  font-size: 22px;
+  font-family: "Luxurious Roman";
+  font-weight: bold;
+  color: #fcf7eb;
+  padding-left: 14px;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+#animation-toggle {
+  float: right;
+  width: 70px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+#name {
+  z-index: 100;
+  font-size: 72px;
+  color: #2f2235;
+  margin-top: 5%;
+  font-family: "Luxurious Roman";
+  font-weight: bold;
+}
+
+body {
+  overflow: hidden;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+/* Navbar links */
+a {
+  font-size: 42px;
+  font-family: "Luxurious Roman";
+  font-weight: bold;
+  float: left;
+  display: block;
+  color: #fcf7eb;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+a:hover {
+  color: #2f2235;
+}
+
+/* Background image stack */
+
+.image-stack {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack__item--mostbottom {
+  grid-column: 6 / -1;
+  grid-row: 3;
+}
+
+.image-stack__item--bottom {
+  grid-column: 12 / -1;
+  grid-row: 4;
+}
+
+.image-stack__item--top {
+  grid-row: 1;
+  grid-column: 7 / span 8;
+  padding-top: 20%;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+}
+
+img {
+  /* width: 100%; */
+  display: block;
+}
+
+#blob {
+  animation: rotation-blob1 7s infinite alternate;
+  opacity: 80%;
+  position: absolute;
+  width: 70%;
+  height: auto;
+}
+
+#blob2 {
+  animation: rotation-blob2 10s infinite alternate;
+  opacity: 30%;
+  width: 40%;
+  height: auto;
+  position: absolute;
+}
+
+#blob3 {
+  animation: rotation-blob2 6s infinite alternate-reverse;
+  opacity: 50%;
+  width: 10%;
+  height: auto;
+  position: absolute;
+}
+
+@keyframes rotation-blob1 {
+  from {
+    transform: rotate(25deg);
+  }
+  to {
+    transform: rotate(75deg);
+  }
+}
+
+@keyframes rotation-blob2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

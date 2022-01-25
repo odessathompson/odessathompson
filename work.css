@@ -1,0 +1,98 @@
+html {
+  background: url("nav_images/sideblob.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fcf7eb;
+}
+
+header {
+  float: right;
+  display: block;
+  margin-right: 2%;
+}
+footer {
+  display: block;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0;
+  z-index: 10;
+}
+
+#name {
+  z-index: 100;
+  font-size: 72px;
+  color: #2f2235;
+  margin-top: 5%;
+  font-family: "Luxurious Roman";
+  font-weight: bold;
+}
+
+body {
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+/* Navbar links */
+a {
+  font-size: 42px;
+  font-family: "Luxurious Roman";
+  font-weight: bold;
+  float: left;
+  display: block;
+  color: #fcf7eb;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+a:hover {
+  color: #2f2235;
+}
+
+/* blurb styling */
+
+.blurb {
+  width: 70%;
+  height: auto;
+  background-color: #d1603d;
+  border-radius: 50px;
+  float: right;
+  padding: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.blurb-text {
+  color: #fcf7eb;
+  float: right;
+  font-family: "Luxurious Roman";
+  width: 62%;
+  padding-left: 8%;
+}
+.blurb-head {
+  font-size: 32px;
+  font-weight: bold;
+}
+.blurb-body {
+  font-size: 20px;
+  font-family: "Helvetica";
+  font-weight: lighter;
+}
+
+.blurb-photo {
+  width: 275px;
+  height: auto;
+  float: left;
+  width: 30%;
+}

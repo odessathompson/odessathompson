@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odessa Thompson</title>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<header>
+  <p id = "name" >Odessa Thompson</p>
+</header>
+
+<body>
+  
+  <nav>
+    <a href="./index.html">about</a>
+    <a href="./work.html">work</a>
+    <a href="#contact">contact</a>
+    <a href="links/OdessaThompson_Resume_F21.pdf" target="blank">resume</a>
+
+  </nav>
+
+  <div class="bg-container">
+    <div class="image-stack">
+
+      <div class="image-stack__item image-stack__item--top" >
+        <img src="nav_images/basicblob.png" id="blob" alt="blob"> </img>
+      </div>
+
+      <div class="image-stack__item image-stack__item--bottom">
+        <img src="nav_images/basicblob.png" id="blob2" alt="blob2"></img>
+      </div>
+
+      <div class="image-stack__item image-stack__item--mostbottom">
+        <img src="nav_images/basicblob.png" id="blob3" alt="blob3"></img>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<footer>
+  <p id = "animation-text"> animation</p>
+  <img src="nav_images/checked.png" id="animation-toggle" alt="animation-toggle" onclick= "this.src='nav_images/checked.png'" ></img>
+
+</footer>
+
+<script language="javascript">
+
+dragElement(document.getElementById("blob"));
+dragElement(document.getElementById("blob2"));
+dragElement(document.getElementById("blob3"));
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  elmnt.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</html>
