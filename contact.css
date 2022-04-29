@@ -29,6 +29,7 @@ footer {
 }
 
 body {
+  overflow: hidden;
 }
 
 nav {
@@ -45,7 +46,7 @@ nav {
 }
 
 /* Navbar links */
-#navlink {
+a {
   font-size: 42px;
   font-family: "Luxurious Roman";
   font-weight: bold;
@@ -56,56 +57,28 @@ nav {
   padding: 14px;
   text-decoration: none;
 }
-#navlink:hover {
-  color: #2f2235;
-}
-a {
-  color: #2f2235;
-  text-decoration: none;
-}
 a:hover {
-  color: #3f3244;
-}
-h3 {
   color: #2f2235;
-  font-weight: bold;
 }
 
-/* blurb styling */
+.texty {
+  position: fixed;
 
-.blurb {
-  width: 70%;
+  /* width: 60%; */
   height: auto;
-  background-color: #d1603d;
-  border-radius: 50px;
-  float: right;
+  /* float: right; */
   padding: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
+  top: 40%;
+  left: 47%;
 }
 
-.blurb-text {
-  color: #fcf7eb;
-  float: right;
+.email {
+  text-align: center;
+  font-size: 22px;
+  color: #2f2235;
+  margin-top: 5%;
   font-family: "Luxurious Roman";
-  width: 62%;
-  /* padding-left: 8%; */
-}
-.blurb-head {
-  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-.blurb-body {
-  font-size: 20px;
-  font-family: "Helvetica";
-  font-weight: lighter;
-}
-
-.blurb-photo {
-  width: 275px;
-  height: auto;
-  float: left;
-  width: 30%;
-  padding-left: 2%;
 }
