@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odessa Thompson</title>
+    <link rel="stylesheet" href="./css/shape_page.css" />
+    <link rel="stylesheet" href="./css/circles.css" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+
+  <!-- create multiple view compatible iframe - ipad / phone and computer screens -->
+  <!-- media query for ipad and iphone -->
+  <header>
+    <p id="name">What is a <span style="color: orange;">Circle</span>?</p>
+  </header>
+
+  <!-- create triangle, square, rectangle, circle sub pages -->
+  <!-- embed 4 pages per subpage -->
+
+  <body>
+    <nav>
+      <a href="./museum.html"><img src="standalone_obs/tempicon.png" id="nav-icon"></img></a>
+      <a href="./circle.html"><img src="standalone_obs/circle.png" id="nav-icon"></img></a>
+      <a href="./rectangle.html"><img src="standalone_obs/rectangle.png" id="nav-icon"></img></a>
+      <a href="./triangle.html"><img src="standalone_obs/triangle.png" id="nav-icon"></img></a>
+      <a href="./square.html"><img src="standalone_obs/square.png" id="nav-icon"></img></a>
+    </nav>
+
+    <div class = "scroll_container">
+
+      <!-- <canvas id="canvas" class="circle_canvas"></canvas> -->
+
+      <img src="book_images/speechmax.png" id="max" />
+      <img src="book_images/speechcharacter.PNG" id="second_character" />
+      <img src="book_images/speechbubble.png" id="speechbubble" />
+      <img src="book_images/speechbubbleflipped.png" id="speechbubbleflipped" />
+
+
+      <div class="word1-container">
+        <img src="standalone_obs/Rectangle 2.svg" id="word" />
+        <p id="word1text">smooth</p>
+      </div>
+
+      <div class="word2-container">
+        <img src="standalone_obs/Rectangle 1.svg" id="word" />
+        <p id="word2text">no corners</p>
+      </div>
+
+      <div class="word3-container">
+        <img src="standalone_obs/Rectangle 3.svg" id="word" />
+        <p id="word3text">round</p>
+      </div>
+
+      <img src="standalone_obs/circle_images/circlebuddha.png" id="circlebutton" />
+
+      <div class="image-stack">
+        <div class="image-stack__item--buddha">
+          <a href = "https://emuseum.cornell.edu/objects/37482/buddha-seated-under-the-naga?ctx=1fe8af6ce409113c4cf8802a0b7c4b4a57f3f6fe&idx=1">
+            <img src="standalone_obs/circle_images/buddha.png" id="buddha" />
+          </a>
+        </div>
+        <div class="image-stack__item--donut">
+          <img src="standalone_obs/circle_images/donut.PNG" id="donut" class="shape_example" >
+        </div>
+        <div class="image-stack__item--quarter">
+          <img src="standalone_obs/circle_images/quarter.png" id="quarter" class="shape_example">
+        </div>
+        <div class="image-stack__item--soccer">
+          <img src="standalone_obs/circle_images/soccer.png" id="soccer" class="shape_example">
+        </div>
+        <div class="image-stack__item--tire">
+          <img src="standalone_obs/circle_images/tire.png" id="tire" class="shape_example">
+        </div>
+        <div class="image-stack__item--pizza">
+          <img src="standalone_obs/circle_images/pizza.png" id="pizza" class="shape_example">
+        </div>
+        <div class="image-stack__item--orange">
+          <img src="standalone_obs/circle_images/orange.png" id="orange" class="shape_example">
+        </div>
+
+      </div>
+
+      <div class="bg-container">
+        <div class="image-stack">
+          <div class="image-stack__item--buddha">
+            <a href = "https://emuseum.cornell.edu/objects/37482/buddha-seated-under-the-naga?ctx=1fe8af6ce409113c4cf8802a0b7c4b4a57f3f6fe&idx=1">
+              <img src="standalone_obs/circle_images/buddha_shapes.png" id="overlay_buddha" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+  <!-- add background -->
+  <style>
+    body {
+      background-image: url("book_images/circlebg.png");
+      background-size: cover; 
+      background-repeat:repeat-x; 
+      height: 100vh;
+    }
+  </style>
+
+  <footer>
+    <!-- <p id = "animation-text"> animation</p>
+  <img src="nav_images/checked.png" id="animation-toggle" alt="animation-toggle" onclick= "this.src='nav_images/checked.png'" ></img> -->
+  </footer>
+
+  <script language="javascript"></script>
+</html>

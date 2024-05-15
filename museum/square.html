@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odessa Thompson</title>
+    <link rel="stylesheet" href="./css/shape_page.css" />
+    <link rel="stylesheet" href="./css/circles.css" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+
+  <!-- create multiple view compatible iframe - ipad / phone and computer screens -->
+  <!-- media query for ipad and iphone -->
+  <header>
+    <p id="name">What is a <span style="color: #7054d4;">Square</span>?</p>
+  </header>
+
+  <!-- create triangle, square, rectangle, circle sub pages -->
+  <!-- embed 4 pages per subpage -->
+
+  <body>
+    <nav>
+      <a href="./museum.html"><img src="standalone_obs/tempicon.png" id="nav-icon"></img></a>
+      <a href="./circle.html"><img src="standalone_obs/circle.png" id="nav-icon"></img></a>
+      <a href="./rectangle.html"><img src="standalone_obs/rectangle.png" id="nav-icon"></img></a>
+      <a href="./triangle.html"><img src="standalone_obs/triangle.png" id="nav-icon"></img></a>
+      <a href="./square.html"><img src="standalone_obs/square.png" id="nav-icon"></img></a>
+    </nav>
+
+
+    <img src="book_images/gingerspeech copy.PNG" id="max" />
+    <img src="book_images/rylanspeech copy.PNG" id="second_character" />
+    <img src="book_images/speechbubble.png" id="speechbubble" />
+    <img src="book_images/speechbubbleflipped.png" id="speechbubbleflipped" />
+
+
+    <div class="word1-container">
+      <img src="standalone_obs/Rectangle 2.svg" id="word" class="filter_sq"/>
+      <p id="word1text">symmetric</p>
+    </div>
+
+    <div class="word2-container">
+      <img src="standalone_obs/Rectangle 1.svg" id="word" class="filter_sq"/>
+      <p id="word2text">four corners</p>
+    </div>
+
+    <div class="word3-container">
+      <img src="standalone_obs/Rectangle 3.svg" id="word" class="filter_sq"/>
+      <p id="word3text">four equal sides</p>
+    </div>
+
+    <img src="standalone_obs/singlesquare.PNG" id="squarebutton" />
+
+
+    <div class="image-stack">
+      <div class="image-stack__item--buddha">
+        <a href = "https://emuseum.cornell.edu/objects/24269/watchtower?ctx=2a5ea3215a7e5f2b927160be16e4820419e0177d&idx=1">
+          <img src="standalone_obs/watchtower.PNG" id="musuem_picture" />
+        </a>
+      </div>
+      <div class="image-stack__item--multi">
+        <img src="standalone_obs/square_images/squares_multiple.PNG" id="multi" class="multiple_example" >
+      </div>
+      <div class="image-stack__item--toast">
+        <img src="standalone_obs/square_images/toast.png" id="toast" class="shape_example">
+      </div>
+      <div class="image-stack__item--window">
+        <img src="standalone_obs/square_images/window.png" id="window" class="shape_example">
+      </div>
+      <div class="image-stack__item--crossing">
+        <img src="standalone_obs/square_images/crossing.png" id="crossing" class="shape_example">
+      </div>
+    </div>
+
+    <div class="bg-container">
+      <div class="image-stack">
+        <div class="image-stack__item--buddha">
+          <a href = "https://emuseum.cornell.edu/objects/24269/watchtower?ctx=2a5ea3215a7e5f2b927160be16e4820419e0177d&idx=1">
+            <img src="standalone_obs/watchtowershapes.PNG" id="overlay_square" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- add background -->
+  <style>
+    body {
+      background-image: url("book_images/squarebg.png");
+      background-size: cover; 
+      background-repeat: repeat-x; 
+      height: 100vh;
+    }
+  </style>
+
+  <footer>
+    <!-- <p id = "animation-text"> animation</p>
+  <img src="nav_images/checked.png" id="animation-toggle" alt="animation-toggle" onclick= "this.src='nav_images/checked.png'" ></img> -->
+  </footer>
+
+  <script language="javascript"></script>
+</html>

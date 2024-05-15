@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odessa Thompson</title>
+    <link rel="stylesheet" href="./css/museum_main.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+
+  <!-- create multiple view compatible iframe - ipad / phone and computer screens -->
+  <!-- media query for ipad and iphone -->
+
+  <header>
+    <p id="name">Shapes at the Musuem</p>
+  </header>
+
+  <!-- create triangle, square, rectangle, circle sub pages -->
+  <!-- embed 4 pages per subpage -->
+
+  <body>
+
+    <div id="popupContainer" class="popup-container">
+      <div class="popup-content">
+          <h1>Welcome!</h1>
+          <h2>Click the different shapes to explore the musuem</h2>
+
+          <!-- <p>This is some introductory text explaining how to use the website.</p> -->
+          <button id="closePopupBtn">Close</button>
+      </div>
+    </div>
+
+    <div class="bg-container">
+      <div class="image-stack">
+        <div class = "image-stack__item--middle" >
+          <a href="./circle.html"><img src="standalone_obs/circle.png" class="shape-link"></img></a>
+        </div>
+        <div class = "image-stack__item--topleft" >
+          <a href="./triangle.html"><img src="standalone_obs/triangle.png" class="shape-link"></img></a>
+        </div>
+        <div class = "image-stack__item--topright" >
+          <a href="./rectangle.html"><img src="standalone_obs/rectangle.png" style="rotate: -60deg;" class="shape-link"></img></a>
+        </div>
+        <div class = "image-stack__item--middle2" >
+          <a href="./square.html"><img src="standalone_obs/square.png" class="shape-link"></img></a>
+        </div>
+        <div class = "image-stack__item--paintbrush" >
+          <a href="./drawing.html"><img src="standalone_obs/paintbrush.png" class="shape-link"></img></a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <!-- <p id = "animation-text"> animation</p>
+  <img src="nav_images/checked.png" id="animation-toggle" alt="animation-toggle" onclick= "this.src='nav_images/checked.png'" ></img> -->
+  </footer>
+
+  <script language="javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the popup container and close button
+        const popupContainer = document.getElementById('popupContainer');
+        const closePopupBtn = document.getElementById('closePopupBtn');
+
+        // Check if the popup has been shown before
+        const popupShownBefore = localStorage.getItem('popupShownBefore');
+
+        // If the popup has not been shown before, show it
+        // if (!popupShownBefore) {
+            popupContainer.style.display = 'block';
+        // }
+
+        // Close the popup and set flag in local storage when close button is clicked
+        closePopupBtn.addEventListener('click', function() {
+            popupContainer.style.display = 'none';
+            // localStorage.setItem('popupShownBefore', true);
+        });
+    });
+  </script>
+</html>

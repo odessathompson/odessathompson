@@ -1,0 +1,382 @@
+/* html { */
+/* background: url("nav_images/sideblob.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fcf7eb;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: contain; /* Cover the entire viewport */
+  background-position: bottom;
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  height: 100vh;
+  background-color: #c0ecfc;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+header {
+  float: right;
+  display: block;
+  margin-right: 2%;
+}
+
+footer {
+  display: block;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0;
+  z-index: 10;
+}
+
+nav {
+  /* overflow: hidden; */
+  position: fixed;
+  z-index: 9999;
+  height: 60%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  top: 0; /* Stay at the top */
+  left: 0;
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+nav a {
+  display: block;
+  margin-bottom: auto; /* Push items to the top and spread them evenly */
+}
+
+#nav-icon {
+  width: 40%;
+  height: auto;
+  opacity: 90%;
+  float: left;
+  display: block;
+  padding: 5%;
+  padding-left: 10px;
+  transition: height 0.3s ease-in, width 0.3s ease-in;
+}
+#nav-icon:hover {
+  animation: rotation-blob2 7s ease-in-out infinite alternate;
+  width: 45%;
+  height: auto;
+}
+
+#shape-link {
+  size: contain;
+  position: absolute;
+  height: 50vh;
+  width: auto;
+  opacity: 90%;
+}
+#shape-link:hover {
+  animation: rotation-blob2 11s ease-in-out infinite alternate;
+}
+
+#name {
+  position: relative;
+  z-index: 100;
+  font-size: 5.1vw;
+  color: #2f2235;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-family: "Quicksand";
+  font-weight: bold;
+  padding-left: 160px;
+  padding-right: 40px;
+}
+
+.shape_example {
+  width: 30vh;
+  height: auto;
+}
+
+#musuem_picture {
+  height: 90vh;
+  width: auto;
+}
+#overlay_buddha {
+  height: 100vh;
+  width: auto;
+  opacity: 0; /* Initially hidden */
+  z-index: 0;
+  padding-top: 20%;
+  transition: opacity 0.5s ease-in;
+}
+#overlay_triangle {
+  height: 95vh;
+  width: auto;
+  opacity: 0; /* Initially hidden */
+  z-index: 0;
+  padding-top: 20%;
+  transition: opacity 0.5s ease-in;
+}
+
+#overlay_rectangle {
+  height: 95vh;
+  width: auto;
+
+  opacity: 0; /* Initially hidden */
+  z-index: 0;
+  padding-top: 20%;
+  transition: opacity 0.5s ease-in;
+}
+
+#overlay_square {
+  height: 85vh;
+  width: auto;
+
+  opacity: 0; /* Initially hidden */
+  z-index: 0;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  transition: opacity 0.5s ease-in;
+}
+
+#overlay_buddha:hover,
+#overlay_triangle:hover,
+#overlay_rectangle:hover,
+#overlay_square:hover {
+  opacity: 0.9;
+}
+
+.word3-container,
+.word2-container,
+.word4-container {
+  width: 30%;
+  position: absolute;
+  display: inline-block;
+}
+
+.word1-container {
+  width: 22%;
+  position: absolute;
+  display: inline-block;
+}
+
+.word1-container {
+  top: 24%;
+  left: 45%;
+}
+
+.word2-container {
+  top: 20%;
+  left: 68%;
+}
+
+.word3-container {
+  top: 35%;
+  left: 65%;
+}
+
+#word {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 200;
+}
+
+#word1textlong,
+#word2textlong,
+#word3textlong,
+#word4textlong {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  /* Ensures the text is exactly centered in the image */
+  color: white; /* Example text color */
+  z-index: 200;
+  font-size: 1.9vw;
+  font-family: "Quicksand";
+  font-weight: bold;
+  opacity: 0;
+  text-align: center;
+}
+
+#word1text,
+#word2text,
+#word3text,
+#word4text {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  /* Ensures the text is exactly centered in the image */
+  color: white; /* Example text color */
+  font-size: 20px; /* Example font size */
+  z-index: 200;
+  font-size: 2.2vw;
+  font-family: "Quicksand";
+  font-weight: bold;
+  opacity: 0;
+  text-align: center;
+}
+#word1text {
+  opacity: 0;
+}
+#word2text {
+  transform: translate(-50%, -150%);
+  opacity: 0;
+}
+#word3text {
+  transform: translate(-50%, -150%);
+  opacity: 0;
+}
+
+#word4text {
+  transform: translate(-50%, -150%);
+  opacity: 0;
+}
+
+#word3text:hover,
+#word2text:hover,
+#word1text:hover,
+#word4text:hover,
+#word3textlong:hover,
+#word2textlong:hover,
+#word1textlong:hover,
+#word4textlong:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#max {
+  bottom: 0; /* Stay at the top */
+  right: 0;
+  position: absolute;
+  height: 30vh;
+  padding-right: 2%;
+}
+
+#second_character {
+  bottom: 0; /* Stay at the top */
+  right: -25vw;
+  position: absolute;
+  height: 30vh;
+  padding-right: 2%;
+}
+
+#speechbubble {
+  top: 0; /* Stay at the top */
+  right: 0;
+  position: absolute;
+  height: 100vh;
+  opacity: 80%;
+}
+#speechbubbleflipped {
+  top: 0; /* Stay at the top */
+  left: 100vw;
+  position: absolute;
+  height: 100vh;
+  opacity: 80%;
+}
+
+#circlebutton {
+  width: 20%;
+  position: absolute;
+  display: inline-block;
+  top: 38%;
+  left: 45%;
+}
+
+#trianglebutton {
+  width: 15%;
+  position: absolute;
+  display: inline-block;
+  top: 35%;
+  left: 50%;
+}
+
+#rectanglebutton {
+  width: 22%;
+  position: absolute;
+  display: inline-block;
+  top: 48%;
+  left: 50%;
+}
+
+#squarebutton {
+  width: 15%;
+  position: absolute;
+  display: inline-block;
+  top: 43%;
+  left: 50%;
+}
+
+/* Filters for SVGS */
+
+.filter_rec {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(9%) saturate(3134%)
+    hue-rotate(96deg) brightness(99%) contrast(79%);
+}
+
+.filter_tri {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(73%) saturate(2313%)
+    hue-rotate(316deg) brightness(93%) contrast(92%);
+}
+
+.filter_sq {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(14%) saturate(2728%)
+    hue-rotate(213deg) brightness(81%) contrast(105%);
+}
+
+/* Scroll Container shenanigans*/
+.scroll_container {
+  height: 100vh;
+  width: 150vw;
+  bottom: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* Background image stack */
+
+.image-stack {
+  height: 100%;
+  width: 200vw;
+  top: 0;
+  left: 0;
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.image-stack__item--buddha {
+  grid-row: -1;
+  grid-column: 3;
+  z-index: 2;
+}
+
+img {
+  /* width: 100%; */
+  display: block;
+}
+
+@keyframes rotation-blob1 {
+  from {
+    transform: rotate(25deg);
+  }
+  to {
+    transform: rotate(75deg);
+  }
+}
+
+@keyframes rotation-blob2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

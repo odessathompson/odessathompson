@@ -1,0 +1,112 @@
+.tri_exs {
+  width: 55vw;
+  height: auto;
+  rotate: 10deg;
+}
+
+.image-stack__item--tri_exs {
+  grid-row: 1;
+  grid-column: 13;
+  z-index: 1;
+  position: absolute;
+  left: -5vw;
+  top: 0vw;
+}
+
+.rect_exs {
+  width: 50vw;
+  height: auto;
+  rotate: 15deg;
+}
+
+.image-stack__item--rect_exs {
+  grid-row: 1;
+  grid-column: 13;
+  z-index: 1;
+  position: absolute;
+  left: -1vw;
+  top: 3vw;
+}
+
+.image-stack__item--donut {
+  grid-row: 1;
+  grid-column: 13;
+  z-index: 1;
+  position: absolute;
+  left: 0%;
+}
+
+.image-stack__item--quarter {
+  grid-row: 2;
+  grid-column: 14;
+  z-index: 1;
+  position: absolute;
+  left: 10vw;
+  top: 40vh;
+}
+
+.image-stack__item--tire {
+  grid-row: 3;
+  grid-column: 15;
+  position: absolute;
+}
+
+.image-stack__item--soccer {
+  grid-row: 5;
+  grid-column: 16;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+}
+
+.image-stack__item--orange {
+  grid-row: 2;
+  grid-column: 17;
+  position: absolute;
+}
+
+.image-stack__item--pizza {
+  grid-row: 2;
+  grid-column: 13;
+  position: absolute;
+  top: 25vh;
+}
+
+.multiple_example {
+  width: 45vw;
+  height: auto;
+}
+
+.image-stack__item--multi {
+  grid-row: 1;
+  grid-column: 12;
+  position: absolute;
+  top: -5vh;
+  left: 0vw;
+  rotate: -15deg;
+}
+
+.image-stack__item--toast {
+  grid-row: 5;
+  grid-column: 16;
+  position: absolute;
+  top: 40vh;
+  left: -1vw;
+  rotate: -15deg;
+}
+
+.image-stack__item--window {
+  grid-row: 2;
+  grid-column: 17;
+  position: absolute;
+  top: 20vh;
+  left: 5vw;
+}
+
+.image-stack__item--crossing {
+  grid-row: 2;
+  grid-column: 13;
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+}

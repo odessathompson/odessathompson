@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odessa Thompson</title>
+    <link rel="stylesheet" href="./css/shape_page.css" />
+    <link rel="stylesheet" href="./css/circles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+
+  <!-- create multiple view compatible iframe - ipad / phone and computer screens -->
+  <!-- media query for ipad and iphone -->
+  <header>
+    <p id="name">What is a <span style="color: #34b874
+      ;">Rectangle</span>?</p>
+  </header>
+
+  <!-- create triangle, square, rectangle, circle sub pages -->
+  <!-- embed 4 pages per subpage -->
+
+  <body>
+    <nav>
+      <a href="./museum.html"><img src="standalone_obs/tempicon.png" id="nav-icon"></img></a>
+      <a href="./circle.html"><img src="standalone_obs/circle.png" id="nav-icon"></img></a>
+      <a href="./rectangle.html"><img src="standalone_obs/rectangle.png" id="nav-icon"></img></a>
+      <a href="./triangle.html"><img src="standalone_obs/triangle.png" id="nav-icon"></img></a>
+      <a href="./square.html"><img src="standalone_obs/square.png" id="nav-icon"></img></a>
+    </nav>
+
+
+    <img src="book_images/rylanspeech copy.PNG" id="max" />
+    <img src="book_images/speechcharacter.PNG" id="second_character" />
+    <img src="book_images/speechbubble.png" id="speechbubble" />
+    <img src="book_images/speechbubbleflipped.png" id="speechbubbleflipped" />
+
+
+    <div class="word1-container">
+      <img src="standalone_obs/Rectangle 2.svg" id="word" class="filter_rec"/>
+      <p id="word1textlong">four corners</p>
+    </div>
+
+    <div class="word2-container">
+      <img src="standalone_obs/Rectangle 1.svg" id="word" class="filter_rec"/>
+      <p id="word2textlong">two long sides</p>
+    </div>
+
+    <div class="word3-container">
+      <img src="standalone_obs/Rectangle 3.svg" id="word" class="filter_rec"/>
+      <p id="word3textlong">two short sides</p>
+    </div>
+
+    <img src="standalone_obs/singlerectangle.PNG" id="rectanglebutton" />
+
+
+    <div class="image-stack">
+      <div class="image-stack__item--buddha">
+        <a href = "https://emuseum.cornell.edu/objects/18511/one-partial-suit-of-samurai-armor?ctx=f6c57ad093e3720686f4a6069c32cbc6c6f9266e&idx=6">
+          <img src="standalone_obs/samurai.png" id="musuem_picture" />
+        </a>
+      </div>
+      <div class="image-stack__item--rect_exs">
+        <img src="standalone_obs/rectangle_exs.PNG" id="rect_exs" class="rect_exs" >
+      </div>
+    </div>
+
+    <div class="bg-container">
+      <div class="image-stack">
+        <div class="image-stack__item--buddha">
+          <a href = "https://emuseum.cornell.edu/objects/18511/one-partial-suit-of-samurai-armor?ctx=f6c57ad093e3720686f4a6069c32cbc6c6f9266e&idx=6">
+            <img src="standalone_obs/samuraishapes.PNG" id="overlay_rectangle" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- add background -->
+  <style>
+    body {
+      background-image: url("book_images/rectanglebg.png");
+      background-size: cover; 
+      background-repeat: repeat-x; 
+      height: 100vh;
+    }
+  </style>
+
+  <footer>
+    <!-- <p id = "animation-text"> animation</p>
+  <img src="nav_images/checked.png" id="animation-toggle" alt="animation-toggle" onclick= "this.src='nav_images/checked.png'" ></img> -->
+  </footer>
+
+  <script language="javascript"></script>
+</html>
