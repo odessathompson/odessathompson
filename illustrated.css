@@ -1,0 +1,12 @@
+.texty {
+  position: fixed;
+
+  /* width: 60%; */
+  height: auto;
+  /* float: right; */
+  padding: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  top: 40%;
+  left: 40%;
+}
